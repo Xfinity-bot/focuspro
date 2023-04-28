@@ -83,7 +83,7 @@ setBtnStatus( (prev)=>({...initialState, [btn] : !prev.btn})  )
    fontWeight="extrabold">{minutesLeft<10?'0'+minutesLeft:minutesLeft}:{secondsLeft<10?'0'+secondsLeft:secondsLeft}</Heading>
   </Center>
 </Box>
-<Button onClick={startTimer} rightIcon={<TimeIcon/ >} >Start </Button>
+<Button isDisabled={totalSeconds} onClick={startTimer} rightIcon={<TimeIcon/ >} >Start </Button>
 </Container>
     </>
   )
