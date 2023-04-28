@@ -69,7 +69,7 @@ setBtnStatus( (prev)=>({...initialState, [btn] : !prev.btn})  )
   return (
     <>
 <Container >
-     <ButtonGroup size='sm' variant='ghost' spacing='2' margin={'20 0'} >
+     <ButtonGroup size='sm' variant='ghost' spacing='2' margin={'50px 0'} >
   <Button size='sm'  isActive={bttnStatus.vs} onClick={()=>{handleClick("vs")}} colorScheme='blue'>Very Short Break</Button>
   <Button size='sm' isActive={bttnStatus.s} onClick={()=>{handleClick('s')}} colorScheme='blue'>Short Break</Button>
   <Button size='sm' isActive={bttnStatus.l} onClick={()=>handleClick('l')} colorScheme='blue'>Long Break</Button>
