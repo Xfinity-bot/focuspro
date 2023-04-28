@@ -3,6 +3,7 @@ import { Button, useToast, ButtonGroup, Center, Box, Heading, Container } from '
 import { TimeIcon } from '@chakra-ui/icons'
 
 
+
 function App() {
   let [count,setCount] = useState(0)
   const toast = useToast()
@@ -83,7 +84,7 @@ setBtnStatus( (prev)=>({...initialState, [btn] : !prev.btn})  )
    fontWeight="extrabold">{minutesLeft<10?'0'+minutesLeft:minutesLeft}:{secondsLeft<10?'0'+secondsLeft:secondsLeft}</Heading>
   </Center>
 </Box>
-<Button isDisabled={totalSeconds} onClick={startTimer} rightIcon={<TimeIcon/ >} >Start </Button>
+<Button isDisabled={totalSeconds}  colorScheme={"gray"} onClick={startTimer} rightIcon={<TimeIcon/ >} >Start </Button>
 </Container>
     </>
   )
